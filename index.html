@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | News homepage</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .font-inter {
+      font-family: 'Inter', sans-serif;
+    }
+    .main-title {
+      font-size: 48px;
+      line-height: 1.1;
+    }
+    .menu-item {
+      color: hsl(236, 13%, 42%);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body class="container mx-auto px-6 md:px-10 lg:px-20 py-8 font-inter">
+  <header class="mb-8 w-full">
+    <nav class="flex justify-between items-center">
+      <img src="/frontend-mentor-news-homepage/assets/images/logo.svg" alt="Logo" class="w-16 h-auto">
+      <div class="hidden md:flex space-x-8">
+        <a href="#" class="menu-item">Home</a>
+        <a href="#" class="menu-item">New</a>
+        <a href="#" class="menu-item">Popular</a>
+        <a href="#" class="menu-item">Trending</a>
+        <a href="#" class="menu-item">Categories</a>
+      </div>
+      <button id="menu_btn" class="md:hidden"><img src="/frontend-mentor-news-homepage/assets/images/icon-menu.svg" id="menu_img" alt="Menu Icon"></button>
+      <div class="hidden flex flex-col bg-[hsl(36,100%,99%)] items-start pt-32 pl-8 fixed top-[95px] right-0 left-[95px] bottom-0" id="menu_links">
+        <a href="#" class="menu-item mb-8">Home</a>
+        <a href="#" class="menu-item mb-8">New</a>
+        <a href="#" class="menu-item mb-8">Popular</a>
+        <a href="#" class="menu-item mb-8">Trending</a>
+        <a href="#" class="menu-item mb-8">Categories</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Main Story -->
+    <div class="md:col-span-2">
+      <img src="/frontend-mentor-news-homepage/assets/images/image-web-3-desktop.jpg" alt="Main Story Image" class="w-full">
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-x-6">
+        <h1 class="main-title font-bold text-[hsl(240,100%,5%)] mb-4">The Bright Future of Web 3.0?</h1>
+        <div class="flex flex-col">
+          <p class="text-[hsl(236,13%,42%)] mb-4 md:mb-6">
+            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+            But is it really fulfilling its promise?
+          </p>
+          <a href="#" class="bg-[hsl(5,85%,63%)] text-white font-semibold text-sm py-2 px-4 inline-block max-w-[150px] text-center">Read more</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar New Section -->
+    <aside class="bg-[hsl(240,100%,5%)] p-6">
+      <h3 class="text-[hsl(35,77%,62%)] font-bold text-2xl mb-6">New</h3>
+      <div class="border-b border-[hsl(236,13%,42%)] pb-6 mb-6">
+        <h4 class="text-white font-bold mb-2">Hydrogen VS Electric Cars</h4>
+        <p class="text-[hsl(233,8%,79%)] text-sm">Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </div>
+      <div class="border-b border-[hsl(236,13%,42%)] pb-6 mb-6">
+        <h4 class="text-white font-bold mb-2">The Downsides of AI Artistry</h4>
+        <p class="text-[hsl(233,8%,79%)] text-sm">What are the possible adverse effects of on-demand AI image generation?</p>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-2">Is VC Funding Drying Up?</h4>
+        <p class="text-[hsl(233,8%,79%)] text-sm">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
+    </aside>
+  </section>
+
+  <!-- Articles Section -->
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+    <div class="flex items-start space-x-4">
+      <img src="/frontend-mentor-news-homepage/assets/images/image-retro-pcs.jpg" alt="Retro PCs" class="w-24 h-auto">
+      <div>
+        <h2 class="text-[hsl(5,85%,63%)] font-bold text-2xl">01</h2>
+        <h3 class="font-bold">Reviving Retro PCs</h3>
+        <p class="text-[hsl(236,13%,42%)] text-sm">What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+    <div class="flex items-start space-x-4">
+      <img src="/frontend-mentor-news-homepage/assets/images/image-top-laptops.jpg" alt="Top Laptops" class="w-24 h-auto">
+      <div>
+        <h2 class="text-[hsl(5,85%,63%)] font-bold text-2xl">02</h2>
+        <h3 class="font-bold">Top 10 Laptops of 2022</h3>
+        <p class="text-[hsl(236,13%,42%)] text-sm">Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
+    <div class="flex items-start space-x-4">
+      <img src="/frontend-mentor-news-homepage/assets/images/image-gaming-growth.jpg" alt="Gaming Growth" class="w-24 h-auto">
+      <div>
+        <h2 class="text-[hsl(5,85%,63%)] font-bold text-2xl">03</h2>
+        <h3 class="font-bold">The Growth of Gaming</h3>
+        <p class="text-[hsl(236,13%,42%)] text-sm">How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="attribution mt-10">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Omolemo Tlomatsane</a>.
+  </div>
+
+<script>
+  const menu_btn = document.getElementById('menu_btn');
+  const menu_links = document.getElementById('menu_links');
+  const menu_img = document.getElementById('menu_img');
+
+  menu_btn.addEventListener('click', () => {
+    menu_links.classList.toggle('hidden');
+    if (menu_links.classList.contains('hidden')) {
+      menu_img.src = '/frontend-mentor-news-homepage/assets/images/icon-menu.svg';
+    } else {
+      menu_img.src = '/frontend-mentor-news-homepage/assets/images/icon-menu-close.svg';
+      menu_button.classList.add('fixed');
+      menu_button.classList.add('top-[4px]');
+    }
+  });
+</script>
+</body>
+</html>
