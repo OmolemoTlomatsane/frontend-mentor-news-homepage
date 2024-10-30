@@ -27,7 +27,7 @@
 <body class="container mx-auto px-6 md:px-10 lg:px-20 py-8 font-inter">
   <header class="mb-8 w-full">
     <nav class="flex justify-between items-center">
-      <img src="/frontend-mentor-news-homepage/assets/images/logo.svg" alt="Logo" class="w-16 h-auto">
+      <img src="/assets/images/logo.svg" alt="Logo" class="w-16 h-auto">
       <div class="hidden md:flex space-x-8">
         <a href="#" class="menu-item">Home</a>
         <a href="#" class="menu-item">New</a>
@@ -35,7 +35,7 @@
         <a href="#" class="menu-item">Trending</a>
         <a href="#" class="menu-item">Categories</a>
       </div>
-      <button id="menu_btn" class="md:hidden"><img src="/frontend-mentor-news-homepage/assets/images/icon-menu.svg" id="menu_img" alt="Menu Icon"></button>
+      <button id="menu_btn" class="md:hidden"><img src="/assets/images/icon-menu.svg" id="menu_img" alt="Menu Icon"></button>
       <div class="hidden flex flex-col bg-[hsl(36,100%,99%)] items-start pt-32 pl-8 fixed top-[95px] right-0 left-[95px] bottom-0" id="menu_links">
         <a href="#" class="menu-item mb-8">Home</a>
         <a href="#" class="menu-item mb-8">New</a>
@@ -50,7 +50,7 @@
   <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
     <!-- Main Story -->
     <div class="md:col-span-2">
-      <img src="/frontend-mentor-news-homepage/assets/images/image-web-3-desktop.jpg" alt="Main Story Image" class="w-full">
+      <img src="/assets/images/image-web-3-desktop.jpg" alt="Main Story Image" class="w-full">
       <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-x-6">
         <h1 class="main-title font-bold text-[hsl(240,100%,5%)] mb-4">The Bright Future of Web 3.0?</h1>
         <div class="flex flex-col">
@@ -84,7 +84,7 @@
   <!-- Articles Section -->
   <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
     <div class="flex items-start space-x-4">
-      <img src="/frontend-mentor-news-homepage/assets/images/image-retro-pcs.jpg" alt="Retro PCs" class="w-24 h-auto">
+      <img src="/assets/images/image-retro-pcs.jpg" alt="Retro PCs" class="w-24 h-auto">
       <div>
         <h2 class="text-[hsl(5,85%,63%)] font-bold text-2xl">01</h2>
         <h3 class="font-bold">Reviving Retro PCs</h3>
@@ -92,7 +92,7 @@
       </div>
     </div>
     <div class="flex items-start space-x-4">
-      <img src="/frontend-mentor-news-homepage/assets/images/image-top-laptops.jpg" alt="Top Laptops" class="w-24 h-auto">
+      <img src="/assets/images/image-top-laptops.jpg" alt="Top Laptops" class="w-24 h-auto">
       <div>
         <h2 class="text-[hsl(5,85%,63%)] font-bold text-2xl">02</h2>
         <h3 class="font-bold">Top 10 Laptops of 2022</h3>
@@ -100,7 +100,7 @@
       </div>
     </div>
     <div class="flex items-start space-x-4">
-      <img src="/frontend-mentor-news-homepage/assets/images/image-gaming-growth.jpg" alt="Gaming Growth" class="w-24 h-auto">
+      <img src="/assets/images/image-gaming-growth.jpg" alt="Gaming Growth" class="w-24 h-auto">
       <div>
         <h2 class="text-[hsl(5,85%,63%)] font-bold text-2xl">03</h2>
         <h3 class="font-bold">The Growth of Gaming</h3>
@@ -122,9 +122,9 @@
   menu_btn.addEventListener('click', () => {
     menu_links.classList.toggle('hidden');
     if (menu_links.classList.contains('hidden')) {
-      menu_img.src = '/frontend-mentor-news-homepage/assets/images/icon-menu.svg';
+      menu_img.src = '/assets/images/icon-menu.svg';
     } else {
-      menu_img.src = '/frontend-mentor-news-homepage/assets/images/icon-menu-close.svg';
+      menu_img.src = '/assets/images/icon-menu-close.svg';
     }
   });
 </script>
